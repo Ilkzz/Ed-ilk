@@ -162,9 +162,9 @@ footer a:hover {
 }
 
 .col3 {
-	width: 33.06%;
-	height: 200px;
-	display: inline-block;
+	width: 33.3333333333%;
+	height: 320px;
+	float:left;
 }
 
 .col4 {
