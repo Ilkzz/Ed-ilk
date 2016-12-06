@@ -1,8 +1,8 @@
 $(document).ready(function() {
-    
     /* Every time the window is scrolled ... */
     $(window).scroll( function(){
-    
+
+        /*FADE IN ELEMENTS ON SCROLL*/
         /* Check the location of each desired element */
         $('.col4, .button, .icon').each( function(i){
             
@@ -18,23 +18,23 @@ $(document).ready(function() {
             
         });
 
+        /*CHANGE NAVIGATION COLOUR*/
+        scroll_pos = $(this).scrollTop();
+        if(scroll_pos > 10) {   
+            $(".navigation").addClass("navigationScrolled").animate();        
+            $("#logo").attr('src', 'images/logo_black.svg');                
+        } else {
+            $(".navigation").removeClass("navigationScrolled").animate();
+            $("#logo").attr('src', 'images/logo.svg'); 
+        }          
+
+        /*FADE IN RETURN TO TOP BUTTON*/
         if ($(this).scrollTop() >= 500) {        
             $('.returnToTop').addClass("returnToTopScrolled");  
         } else {
             $('.returnToTop').removeClass("returnToTopScrolled");
         }
     });
-
-    var $scrollingDiv = $(".navigation");
-    $(window).scroll(function(){  
-        scroll_pos = $(this).scrollTop();
-        if(scroll_pos > 10) {   
-            $scrollingDiv.addClass("navigationcolor").animate();                        
-        } else {
-            $scrollingDiv.removeClass("navigationcolor").animate();
-        }                  
-    });
-    
 });
 
 $('.returnToTop').click(function() {     

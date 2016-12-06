@@ -59,10 +59,15 @@ footer a:hover {
 	top: 0;
 }
 
-.navigationcolor {
-	background-color: black;
-	opacity:0.8;
+.navigationScrolled {
+	background-color: white;
+	opacity:0.95;
 	transition:all .5s ease;
+	border-bottom: 1px solid #666;
+}
+
+.navigationScrolled .group a {
+	color: #282828;
 }
 
 #logo {
@@ -88,14 +93,14 @@ footer a:hover {
 	
 }
 
-.group a {
+nav a {
     font-family: 'Roboto', sans-serif;
-	padding-left: 17px;	
+	padding-left: 30px;	
 	text-align: center;
 	text-decoration: none;
 	color: #fff;
 	font-weight: bold;
-	font-size: 24px;
+	font-size: 20px;
 	
 }
 
@@ -372,7 +377,9 @@ footer a:hover {
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%, -50%)
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%)
 }
 
 .servicesDescription {
@@ -401,7 +408,6 @@ footer a:hover {
 	left:0;
 	opacity:0;
 	background-color:rgba(0,0,0,0.5);
-	-webkit-transition:all .4s ease-in-out;
 	transition:all .4s ease-in-out
 }
 
@@ -416,7 +422,6 @@ footer a:hover {
 	-webkit-transform:translatey(300px);
 	-ms-transform:translatey(300px);
 	transform:translatey(300px);
-	-webkit-transition:all .2s ease-in-out;
 	transition:all .2s ease-in-out;
 	padding:20px;
 	margin:0;
@@ -431,7 +436,6 @@ footer a:hover {
 	background-color:transparent;
 	opacity:0;
 	filter:alpha(opacity=0);
-	-webkit-transition:all .2s ease-in-out;
 	transition:all .2s ease-in-out;
 	margin:50px 0 0;
 	padding:7px 14px;
@@ -456,7 +460,6 @@ footer a:hover {
 }
 
 .hovereffect:hover a.info {
-	-webkit-transition-delay:.2s;
 	transition-delay:.2s;
 }
 
