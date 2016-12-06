@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Home Page</title>
+	<title>Home - Ed&Ilk</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="http://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Alegreya:700" rel="stylesheet" type="text/css" />
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -16,18 +16,19 @@
 			<img id="logo" src="images/logo.svg"  alt="ed&ilk logo"/>
 		</a>       
        	<nav class="group">
-			<a href="index.html">Home</a>
+			<a class="active" href="index.html">Home</a>
 			<a href="services.html">Services</a>
 			<a href="">About</a>
 			<a href="">Contact</a>
 		</nav>    
 	</header>
 	<div class="headerImageCon">
-		<img class="backgroundImg"  src="images/background.jpg"  alt="Header Background"/>
 		<div class="box">
     		<h1 class="heading">We build websites that build your business.</h1>
     		<div class="headingUnderline"></div>
       	</div>
+		<div class="imageOverlay"></div>
+		<img class="backgroundImg"  src="images/background.jpg"  alt="Header Background"/>
 	</div>
 	<section>
 		<h2 class="subheading">WHAT WE DO</h2>
@@ -59,16 +60,20 @@
 		<div class="subheadingUnderline"></div>
 		<div class="fullwidthCol">
 			<div class="col4">
-				<div id="portfolio1"></div>
+				<div id="portfolio1" class="portfolioItem">
+					<img src="images/greenwich.jpg">
+				</div>
 			</div>
 			<div class="col4">
-				<div id="portfolio2"></div>
+				<div id="portfolio2" class="portfolioItem">
+					<img src="images/afitfatgirl.jpg">
+				</div>
 			</div>
 			<div class="col4">
-				<div id="portfolio3"></div>
+				<div id="portfolio3" class="portfolioItem"></div>
 			</div>
 			<div class="col4">
-				<div id="portfolio4"></div>
+				<div id="portfolio4" class="portfolioItem"></div>
 			</div>
 		</div>
 		<a href=""><div class="button">SEE MORE<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></div></a>
