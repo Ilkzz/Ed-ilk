@@ -501,7 +501,3 @@ nav a {
 .hovereffect:hover a.info {
 	transition-delay:.2s;
 }
-
-#test {
-	position: relative;
-}
