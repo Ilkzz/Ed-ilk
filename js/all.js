@@ -1,21 +1,16 @@
 $(document).ready(function() {
     /* Every time the window is scrolled ... */
     $(window).scroll( function(){
-
         /*FADE IN ELEMENTS ON SCROLL*/
         /* Check the location of each desired element */
         $('.col4, .button, .icon').each( function(i){
-            
             var bottom_of_object = $(this).offset().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             
             /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > bottom_of_object ){
-                
-                $(this).animate({'opacity':'1'},500);
-                    
+            if( bottom_of_window > bottom_of_object ){     
+                $(this).animate({'opacity':'1'},500);   
             }
-            
         });
 
         /*CHANGE NAVIGATION COLOUR*/
@@ -29,7 +24,7 @@ $(document).ready(function() {
         }          
 
         /*FADE IN RETURN TO TOP BUTTON*/
-        if ($(this).scrollTop() >= 500) {        
+        if ($(this).scrollTop() >= 450) {        
             $('.returnToTop').addClass("returnToTopScrolled");  
         } else {
             $('.returnToTop').removeClass("returnToTopScrolled");
@@ -44,7 +39,7 @@ $('.returnToTop').click(function() {
 });
 
 /*global document:false, $:false */
-var txt = $('#comments'),
+var txt = $('#message'),
     hiddenDiv = $(document.createElement('div')),
     content = null;
 
