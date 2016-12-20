@@ -92,6 +92,7 @@ input {
 	margin-top: 5px;
 	margin-bottom: 20px;
 	border: 1px solid #bababa;
+	transition: border 0.2s;
 }
 
 textarea {
@@ -101,7 +102,11 @@ textarea {
 	height: 190px;
 	margin-bottom: 20px;
 	border: 1px solid #bababa;
+	transition: border 0.2s;
 }
+
+textarea, input, button { outline: none; }
+
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
 	padding-left: 10px;
@@ -131,6 +136,12 @@ textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
 textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
  	padding-top: 10px; 	 
 }
+
+input:focus,
+textarea:focus {
+  border-bottom: solid 2px #1898c7;
+}
+
 .txtstuff {
     resize: none; /* remove this if you want the user to be able to resize it in modern browsers */
     overflow: hidden;
