@@ -2,14 +2,13 @@
 <html>
 <head>
     <meta charset="utf-8">
-	<title>Contact Us - Ed&Ilk</title>
+	<title>Contact - Ed&Ilk</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="http://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Alegreya:700" rel="stylesheet" type="text/css" />
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous">
     </script>
-    <script src="JS/all.js"></script>
 </head>
 <body>
 	<header class="navigation">
@@ -20,7 +19,7 @@
 			<a href="index.html">Home</a>
 			<a href="services.html">Services</a>
 			<a href="">About</a>
-			<a class="active" href="http://localhost/Ed-ilk-dev-build/contact.php">Contact</a>
+			<a class="active" href="contact.html">Contact</a>
 		</nav>    
 	</header>
 <body>
@@ -33,25 +32,38 @@
 		<img class="backgroundImg"  src="images/contactus.svg"  alt="Header Background"/>
 	</div>
 	<section>
-		<h2 class='contacth2'>Get in touch!</h2>
-		<form method='post' action='' id='contact-form'> 
-			<input type='text' name='firstname' required  placeholder='First Name' size = '30' /><label class='warning' id='firstname-warning'></label><br><br>
-			<input type='text' name='surname' placeholder='Surname' size = '30' required /> <label class='warning' id='surname-warning'></label><br><br>
-			<input type='text' name='email' placeholder='Email' size = '30' required  /> <label class='warning' id='email-warning'></label><br><br>
-			<textarea name='message' placeholder='Message' cols='30'></textarea><br><br>
-			<input type='submit' value='Submit' name='new-msg' />
+		<h2 class='subheading'>Contact Ed&#38;Ilk</h2>
+		<div class="subheadingUnderline"></div>
+		<p class="servicesDescription">Use the form below to get in contact with us.</p>
+		<form method='post' action='' id='contact-form'>
+		<div class="alert">
+		  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+		  Missing fields alert box...
+		</div>
+			<label class="required">Name</label>
+			<input type='text' name='firstname' placeholder='Name' required>
+			<label class="required">Email</label>
+			<input type='email' name='email' placeholder='Email' required>
+			<label>Number</label>
+			<input type='text' name='number' placeholder='Number (optional)'>
+			<label>Company</label>
+			<input type='text' name='email' placeholder='Company (optional)'>
+			<label class="required">Message</label>
+			<textarea id="comments" name='message' placeholder='No matter how big or small, let us know' required></textarea>
+			<button class="button" type='submit' value='Submit' name="new-msg">Submit</button>
 
 			<!--<p id='user-form-message'>$userFormMessage</p>-->
-			</form>
-		</section>
+		</form>
+	</section>
     <footer>
 		<p>&#169; ed&#38;ilk 2016 - All rights reserved - <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">hello@edandilk.com</a></p>
 	</footer>
     
 </body>
+	<script src="JS/all.js"></script>
 </html>
 
-<?php
+<!-- <?php
 	//is form submitted?
 	$createContact = isset($_POST['new-msg']);
 	//if it is...
@@ -88,4 +100,4 @@
 	{
 		$userFormMessage = "";
 	}
-?>
+?> -->
