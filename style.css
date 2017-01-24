@@ -205,6 +205,7 @@ nav a {
 	text-decoration: none;
 	color: #fff;
 	font-size: 20px;
+	font-weight: bold;
 }
 
 .active{
@@ -279,14 +280,13 @@ nav a {
 }
 
 .col{
-	display: block;
+	display: flex;
 	margin: 80px 0px 80px 0px;
+	height: 100%;
 }
 
 .col3 {
-	width: 33.3333333333%;
-	height: 320px;
-	float:left;
+	width: 33%;
 }
 
 .col4 {
@@ -375,22 +375,22 @@ nav a {
 }
 
 .button {
-	background:    #1898c7;
-	color:         #fff;
-	display:       inline-block;
-	width:         200px;
-	height:        50px;
-	font:          normal 400 18px/50px "Roboto-Regular", sans-serif;
-	text-align:    center;
-	text-shadow:   none;
+	background: #1898c7;
+	color: #fff;
+	display: inline-block;
+	width: 200px;
+	height: 50px;
+	font: normal 400 18px/50px "Roboto-Regular", sans-serif;
+	text-align: center;
+	text-shadow: none;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
-	    -ms-transform: translateX(-50%);
-	        transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
 	position: relative;
 	opacity: 0;
-  box-shadow: 0 0 1px transparent;
-  border: 0;
+	box-shadow: 0 0 1px transparent;
+	border: 0;
 }
 
 .button:before {
@@ -729,6 +729,29 @@ nav a {
 .abouthr
 {
 	width:50%;
+}
+.abouth2a
+{
+	font-family: 'Roboto-Regular', sans-serif;
+	margin-right:25em;
+	font-weight: lighter;
+	position:relative;
+}
+#thirdsection
+{
+	position: relative;
+	width:50%;
+	/*background-color: red;*/
+	margin: auto;	
+}
+.aboutp
+{
+	font-size: 19px;
+}
+
+.aboutp
+{
+	
 }
 
 
