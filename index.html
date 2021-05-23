@@ -1,88 +1,223 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<title>Home - Ed&Ilk</title>
+	<link rel="icon" type="image/svg" href="images/Logo-ico.svg" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+		crossorigin="anonymous" />
+	<link href="http://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Alegreya:700" rel="stylesheet"
+		type="text/css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/utilities.css">
+	<link rel="stylesheet" type="text/css" href="css/variables.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="http://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Alegreya:700" rel="stylesheet" type="text/css" />
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous">
-    </script>
+	<link rel="stylesheet" type="text/css" href="css/accordion.css">
+
 </head>
+
 <body>
-	<header class="navigation">
- 		<a href="index.html" id="logolink">
-			<img id="logo" src="images/logo.svg"  alt="ed&ilk logo"/>
-		</a>       
-       	<nav class="group">
-			<a class="active" href="index.html">Home</a>
-			<a href="services.html">Services</a>
-			<a href="">About</a>
-			<a href="contact.html">Contact</a>
-		</nav>    
+	<header class="main-head">
+		<nav id="navbar" class="ed-and-ilk-blue top">
+			<div id="nav-container" class="nav-container">
+				<div class="logo-image">
+					<!-- <img id="logo" class="logo" src="images/logo.svg"  alt="ed&ilk logo"/> -->
+					<!-- <object class="logo" id="svg-object" data="images/logo.svg" type="image/svg+xml"> -->
+					<svg class="logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 626 133"
+						style="enable-background:new 0 0 626 133;" xml:space="preserve">
+
+
+
+
+						<g id="logo">
+							<g class="st0">
+								<path class="st1"
+									d="M77.1,74.9c0,8-1.3,12-8.3,12H18.9c0,13.3,13.3,26.7,26.4,26.7c8.3,0,13.4-1.6,20.1-7.5
+			c1.9-1.8,4.3-2.7,6.3-2.7c2.8,0,4.9,1.6,4.9,5c0,1.2-0.3,2.2-1,3c-6.9,8.7-17.1,13.1-30.2,13.1c-24.3,0-38.1-19.8-38.1-43.1
+			C7.3,59.7,19.9,38,43,38C64.8,38,77.1,53.4,77.1,74.9z M66.1,76.2c0-15-8.7-27.3-22.7-27.3c-14.2,0-24.3,12.5-24.3,27.3H66.1z" />
+								<path class="st1"
+									d="M154.7,13.2c0-3.8,1.9-5.8,5.6-5.8c3.5,0,5.3,1.9,5.3,5.8v106.7c0,3.2-1.8,4.9-5.3,4.9c-3.7,0-5.6-1.6-5.6-5
+			v-9.9c-5,7.8-13.1,14.8-24.1,14.8c-23,0-34.2-20.7-34.2-42.2c0-21.2,11.4-44.3,34.2-44.3c8.9,0,19.8,4.6,24.1,13.7V13.2z
+			 M155,81.8c0-20.8-11.8-32.9-23.9-32.9c-15.3,0-23.3,17-23.3,33.6c0,16.2,7.5,32.2,22.7,32.2C142.6,114.7,155,102.5,155,81.8z" />
+							</g>
+							<g class="st0">
+								<path class="st1" d="M231.6,111.4c-6,9-13.7,13.5-23.2,13.5c-16.3,0-26.1-10.2-26.1-23.9c0-9.8,6.2-18.6,18.4-26.4
+			c-4.4-4.6-7.6-9.7-7.6-15.8c0-10.6,8-16.2,16-16.2c7.5,0,14.8,5.1,14.8,16c0,7.8-6.6,14-11.1,17.7l19.7,22.4l6.3-10.5
+			c1.6-2.7,3.2-4.1,5.2-4.1c2.1,0,3.6,1.4,3.6,3.3c0,1.5-0.5,3.2-1.6,4.9l-8.5,12.8l9.7,10.7c0.6,0.7,0.9,1.6,0.9,2.5
+			c0,2.4-1.9,4.5-4,4.5c-0.9,0-2.1-0.3-2.9-1L231.6,111.4z M204.9,80.5c-9.5,6.3-15.1,13.2-15.1,20.6c0,9.5,9.4,16.4,18.6,16.4
+			c7.7,0,14-4,18.9-12L204.9,80.5z M216.4,57.6c0-5.7-3.9-8-7.6-8c-3.9,0-7.8,2.5-7.8,7.7c0,5.3,3.2,10,7,13.5
+			C211.6,67.9,216.4,63.5,216.4,57.6z" />
+							</g>
+							<g class="st0">
+								<path class="st1" d="M268.4,6.9c4.1,0,7.4,3.2,7.4,7.4s-3.2,7.4-7.4,7.4c-4.1,0-7.4-3.2-7.4-7.4S264.3,6.9,268.4,6.9z M263.3,44.4
+			c0-3.7,1.9-5.5,5.5-5.5c3.7,0,5.8,1.8,5.8,5.5v72.9c0,3.7-1.9,5.5-5.6,5.5s-5.6-1.8-5.6-5.5L263.3,44.4L263.3,44.4z" />
+								<path class="st1" d="M295,12.9c0-3.7,1.8-5.6,5.3-5.6c3.7,0,5.6,1.9,5.6,5.6v104.3c0,3.7-1.8,5.5-5.5,5.5s-5.5-1.8-5.5-5.5V12.9
+			H295z" />
+								<path class="st1" d="M325.1,13.1c0-3.7,1.8-5.5,5.6-5.5c3.7,0,5.5,1.8,5.5,5.5v68.6l42-39.7c1-0.9,2.2-1.3,3.7-1.3
+			c3,0,5.6,1.9,5.6,5c0,1.8-1.5,3.7-3.1,5.3l-23.6,22.1c8.9,12.5,18.4,25.7,27.1,38.2c1,1.8,2.4,4,2.4,6.2c0,3.7-2.4,5.5-5,5.5
+			c-2.1,0-4.4-1.2-5.6-3.2l-27.4-39.1l-16.1,14.6v22.1c0,3.5-1.8,5.3-5.6,5.3c-3.7,0-5.5-1.8-5.5-5.3V13.1z" />
+							</g>
+							<g id="Brackets">
+								<g>
+									<path class="st2" d="M456,48.1L488,18l3.1,23.4l-18.4,17.8L456,48.1z" />
+								</g>
+								<g>
+									<path class="st3" d="M425.6,54.9l66.1,44v23.4L425.6,82V54.9z" />
+								</g>
+								<g id="Rectangle_7_copy">
+									<path class="st4" d="M589.4,45.4l-36-25.8v23.7l20.9,15.4L589.4,45.4z" />
+								</g>
+								<g id="Rectangle_6_copy">
+									<path class="st5" d="M619.3,54.6l-67,44.6v23.7l67-40.9V54.6L619.3,54.6z" />
+								</g>
+							</g>
+
+						</g>
+
+					</svg>
+					</object>
+				</div>
+				<div id="open-menu" class="open-menu"><i class="fa fa-bars"></i></div>
+				<ul class="main-menu">
+					<li><a class="nav-a" href="index.html">Home</a></li>
+					<li><a class="nav-a" href="services.html">Services</a></li>
+					<li><a class="nav-a" href="about.html">About Us</a></li>
+					<li><a class="nav-a" href="contact.html">Contact</a></li>
+					<div class="close-menu"><i class="fa fa-times"></i></div>
+				</ul>
+			</div>
+		</nav>
 	</header>
-	<div class="headerImageCon">
-		<div class="box">
-    		<h1 class="heading">We build websites that build your business.</h1>
-    		<div class="headingUnderline"></div>
-      	</div>
-		<div class="imageOverlay"></div>
-		<img class="backgroundImg"  src="images/background.jpg"  alt="Header Background"/>
-	</div>
-	<section>
-		<h2 class="subheading">WHAT WE DO</h2>
-		<div class="subheadingUnderline"></div>
-		<div class="col">
-			<div class="col3">
-				<img class="whatWeDoIcons" src="images/coding.svg" alt="">
-				<h3>We Visualise</h3>
-				<div class="colUnderline"></div>
-				<p class="whatWeDoDescription">Imagination is key, with our innovative designers on board we can definitely transform our web service and your product from nothing to something instilling life into them making them gain popularity and capturing the eyes of the masses.</p>
+	<section class="hero">
+		<div class="container">
+			<div class="hero-heading">
+				<h1>We are <span class="txt-type" data-wait="1000" data-words='["Ed & Ilk"]'></span></h1>
 			</div>
-			<div class="col3">
-				<img class="whatWeDoIcons" src="images/pantone.svg" alt="">
-				<h3>We Anticipate</h3>
-				<div class="colUnderline"></div>
-				<p class="whatWeDoDescription">Our processes are probed, satisfaction is what gives us satisfaction, our solutions are tailored to each individual client, developed to suit the style of your process. We always anticipate great value for money during development.</p>
-			</div>
-			<div class="col3">
-				<img class="whatWeDoIcons" src="images/graph.svg" alt="">
-				<h3>We Provide Solutions</h3>
-				<div class="colUnderline"></div>
-				<p class="whatWeDoDescription">Your problems are our solution, our aim is to build processes that build your business, our involvment gives you the ability to adapt and be flexible in any way, enabling your business trend and draw traffic.</p>
-			</div>
-		</div>
-		<a href=""><div class="button">FIND OUT MORE<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></div></a>
-	</section>
-	<section class="portfolio">
-		<h2 class="subheading">OUR WORK</h2>
-		<div class="subheadingUnderline"></div>
-		<div class="fullwidthCol">
-			<div class="portfolioCon">
-				<div id="portfolio1" class="portfolioItem">
-					<!-- <img src="images/greenwich.jpg"> -->
-					<img src="http://lorempixel.com/520/520/city">
+			<div class="row">
+				<div class="col-sm-12 col-md-8">
+					<div class="content content-left">
+						<h1>We Create Modern & Minimal Websites</h1>
+						<p>Your problems our solutions</p>
+					</div>
 				</div>
-				<div id="portfolio2" class="portfolioItem">
-					<!-- <img src="images/afitfatgirl.jpg"> -->
-					<img src="http://lorempixel.com/520/520/food">
-				</div>
-			</div>
-			<div class="portfolioCon">
-				<div id="portfolio3" class="portfolioItem">
-					<!-- <img src="images/greenwich.jpg"> -->
-					<img src="http://lorempixel.com/520/520/abstract">
-				</div>
-				<div id="portfolio4" class="portfolioItem">
-					<!-- <img src="images/afitfatgirl.jpg"> -->
-					<img src="http://lorempixel.com/520/520/cats">
+				<div class="col-sm-12 col-md-4">
+					<div class="content-right">
+						<h4>400</h4>
+					</div>
 				</div>
 			</div>
 		</div>
-		<a href=""><div class="button">SEE MORE<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></div></a>
 	</section>
-	<section>
+	<section class="what-we-do mb-5">
+		<div class="caption">
+			<h2 class="subheading">WHAT WE DO</h2>
+			<div class="separator"></div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class=" col-lg-3 col-sm-12  icon-container">
+					<img class="home-icon" src="images/web-design.png" alt="design">
+					<p class="mt-5">UI/UX Design</p>
+				</div>
+				<div class=" col-lg-3  icon-container">
+					<img class="home-icon" src="images/programming.png" alt="programming">
+					<p class="mt-5">Web Development</p>
+				</div>
+				<div class=" col-lg-3  icon-container">
+					<img class="home-icon" src="images/bag.png" alt="logo">
+					<p class="mt-5">Logo Design</p>
+				</div>
+				<div class=" col-lg-3  icon-container">
+					<img class="home-icon" src="images/database.png" alt="database">
+					<p class="mt-5">Database Creation/Management</p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="what-we-do-content mt-5">
+				<div class="col-md-6">
+					<div class="text">
+						<h3>Welcome to Ed & Ilk. A Digital Agency</h3>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, nemo asperiores minima
+							debitis molestias quisquam quo incidunt nesciunt corrupti nobis, ipsam pariatur quibusdam
+							voluptate explicabo tenetur! Dolores fugiat hic esse excepturi ipsum error perspiciatis, rem
+							cum beatae nobis tenetur quam exercitationem dicta neque quis laborum adipisci iure quaerat
+							et illo impedit voluptate sint sunt modi. Temporibus reprehenderit, pariatur corporis
+							similique dignissimos at nam ullam doloribus itaque a officiis voluptates id esse iste
+							incidunt provident deserunt velit mollitia cumque commodi voluptate dolorem cum sequi
+							ratione. Rerum illo quis excepturi voluptates ullam exercitationem quas, dolorem eveniet
+							repellat ipsa atque, voluptatem doloribus id accusantium velit praesentium! Laudantium illum
+							velit perspiciatis assumenda autem odio ad fugiat rerum corrupti. Corporis nam quas quo
+							explicabo, cumque ad perferendis, veniam optio repudiandae maiores provident officiis
+							accusamus ut earum tempora nihil aut unde in voluptas laudantium? Debitis pariatur,
+							perspiciatis provident nesciunt necessitatibus veniam exercitationem quibusdam blanditiis
+							facilis natus facere aperiam quisquam earum corporis, porro culpa quod recusandae incidunt
+							harum totam ea eaque alias voluptate? Eligendi pariatur corrupti, labore praesentium
+							temporibus explicabo quo laudantium dolore saepe fuga? Officia, labore autem, ratione
+							accusamus et itaque sint ducimus cupiditate dolores nemo modi corrupti? Iure illo explicabo
+							sed enim, recusandae animi tempora.</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="text">
+						<h3>Your Problems Our Solutions</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est eius libero quos ipsam quo
+							doloribus, natus consequuntur sint quidem odio sed pariatur distinctio tempora quibusdam.
+							Deserunt dolore, perferendis inventore modi facilis doloremque dolorem, repellat asperiores
+							eos officiis autem vero recusandae ratione veniam maiores cum odio unde minus, hic quis eius
+							facere porro. Iure accusamus blanditiis vitae necessitatibus asperiores illo architecto
+							possimus eaque consequuntur molestias sequi nulla nisi tempora, quod, repellendus natus ad
+							quia quasi. Non architecto, blanditiis, sunt animi nobis, aperiam amet nesciunt eius iusto
+							delectus debitis! Eos praesentium repudiandae sequi. Delectus deserunt voluptatem reiciendis
+							veritatis in minus rem ipsam deleniti ullam fugit, magni nemo dolore tenetur fugiat
+							asperiores ea pariatur quae? Sequi natus ut labore sint delectus explicabo! Placeat tempora
+							quos, iusto beatae ex nobis, amet numquam itaque fugiat pariatur corporis voluptatum dolorem
+							repellendus id dignissimos perferendis qui odio tenetur at assumenda mollitia porro quis
+							necessitatibus. Eum nisi accusamus sed, facilis repellendus nam reprehenderit dolorem
+							officiis dignissimos omnis soluta dicta fuga velit recusandae voluptatem itaque in
+							distinctio eos alias repellat aut officia amet! Ratione, magnam dolores placeat cupiditate
+							ea quidem consequatur eaque eveniet vel? Cumque saepe fuga inventore nobis quasi dignissimos
+							assumenda voluptatum natus, iure blanditiis provident! Repellendus, assumenda!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="our-work">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="subheading">OUR WORK</h2>
+					<div class="separator"></div>
+					<div class="pana-accordion" id="accordion">
+						<div class="pana-accordion-wrap">
+							<div class="pana-accordion-item" style="background-color: #F44336"><img
+									src="images/onbl.png" /></div>
+							<div class="pana-accordion-item" style="background-color: #ffffff"><img
+									src="images/scrutiny.svg" /></div>
+							<div class="pana-accordion-item" style="background-color: #ffffff"><img
+									src="images/longrich.svg" /></div>
+							<div class="pana-accordion-item" style="background-color: #FF9800"><img
+									src="images/bitsandpieces.svg" /></div>
+							
+						</div>
+					</div>
+					<a href="">
+						<div class="button">SEE MORE<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></div>
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- <section>
 		<h2 class="subheading">LETS STAY CONNECTED</h2>
 		<div class="subheadingUnderline"></div>
 		<div class="socialMediaCon">
@@ -90,12 +225,24 @@
 			<img class="twitter icon" src="images/twitter.png">
 			<img class="email icon" src="images/email.png">
 		</div>
-	</section>
+	</section> -->
 	<a class="returnToTop"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
-	<footer>
-		<p>&#169; ed&#38;ilk 2016 - All rights reserved - <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">hello@edandilk.com</a></p>
-	</footer>
-    
-    <script type="text/javascript" src="js/all.js"></script>
+
+	<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+		integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+		crossorigin="anonymous"></script>
+
+	<script src="js/header.js"></script>
+	<script src="js/typewriter.js"></script>
+	<script src="js/pana-accordion.js"></script>
+	<script src="js/accordion.js"></script>
+
 </body>
+
 </html>
